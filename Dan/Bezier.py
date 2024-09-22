@@ -19,7 +19,7 @@ def bezier_points(pt_ctrls):
 
 def trace(pt_ctrls, couleur):
     for p in bezier_points(pt_ctrls):
-        pyxel.circ(p[0], p[1], p[2], couleur)
+        pyxel.circ(*p, couleur)
 
 
 pyxel.init(400, 400)
